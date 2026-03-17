@@ -1,0 +1,124 @@
+:root {
+  --bg: #141721;
+  --panel: #1e2535;
+  --line: #36415b;
+  --text: #e9efff;
+  --muted: #b7c0d8;
+  --btn: #446a9e;
+  --btn-alt: #60528f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #0f1220, #1f2636 60%, #24283b);
+  min-height: 100vh;
+}
+
+.game-shell {
+  width: min(100vw, 520px);
+  min-height: 100vh;
+  margin: 0 auto;
+  border-left: 1px solid #2f3952;
+  border-right: 1px solid #2f3952;
+  background: rgba(14, 18, 28, 0.88);
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+}
+
+.status-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 10px;
+  border-bottom: 1px solid var(--line);
+  background: #181f2f;
+  font-size: 13px;
+}
+
+.status-item {
+  border: 1px solid #313c57;
+  border-radius: 8px;
+  text-align: center;
+  padding: 8px 6px;
+}
+
+.scene-card,
+.text-card,
+.choice-list,
+.actions {
+  padding: 12px;
+}
+
+.scene-card {
+  border-bottom: 1px solid var(--line);
+}
+
+.scene-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  border: 1px solid #3a4562;
+  background: linear-gradient(160deg, #6b8faa, #475f77 45%, #3a4f63);
+}
+
+.scene-title {
+  margin: 10px 2px 0;
+  font-size: 18px;
+  color: #ffe3a0;
+}
+
+.text-card {
+  border-bottom: 1px solid var(--line);
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+#text-content {
+  margin: 0;
+}
+
+.choice-list {
+  display: grid;
+  gap: 8px;
+}
+
+.choice-btn,
+#continue-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 11px;
+  color: #fff;
+  font-size: 15px;
+}
+
+#continue-btn {
+  width: 100%;
+  background: var(--btn);
+}
+
+.choice-btn {
+  background: var(--btn-alt);
+  text-align: left;
+}
+
+.scene-town {
+  background: linear-gradient(180deg, #89b6d8, #dcbf8f 68%, #7d5a3f 68%);
+}
+
+.scene-dock {
+  background: linear-gradient(180deg, #9ec0d8, #457292 56%, #8a623f 56%);
+}
+
+.scene-warehouse {
+  background: linear-gradient(160deg, #767c86, #5b626c, #464b54);
+}
+
+.scene-rest {
+  background: linear-gradient(160deg, #e7bf7f, #a97464, #52445f);
+}
