@@ -1,35 +1,28 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>port-town-demo</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="game-shell">
-      <header class="status-bar">
-        <div class="status-item">Day: <span id="day">1</span></div>
-        <div class="status-item">Stamina: <span id="stamina">12/12</span></div>
-        <div class="status-item">Money: <span id="money">0</span></div>
-      </header>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>港口小镇</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-shell">
+    <header class="status-bar">
+      <div class="status-item">日期：<span id="day">1</span></div>
+      <div class="status-item">体力：<span id="stamina">10</span></div>
+      <div class="status-item">金钱：<span id="money">0</span></div>
+    </header>
 
-      <section class="scene-card">
-        <div id="scene-image" class="scene-image" aria-label="scene image"></div>
-        <h1 id="scene-title" class="scene-title">Harbor Town</h1>
-      </section>
-
-      <section class="text-card">
-        <p id="text-content"></p>
-      </section>
-
-      <section id="choice-list" class="choice-list"></section>
-
-      <section class="actions">
-        <button id="continue-btn" type="button">Continue</button>
-      </section>
+    <main class="scene-card">
+      <h1 id="scene-title" class="scene-title">港口小镇</h1>
+      <div id="scene-art" class="scene-art scene-town"></div>
+      <div id="story-text" class="story-text"></div>
+      <div id="choices" class="choices"></div>
+      <button id="continue-btn" type="button">继续</button>
     </main>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
